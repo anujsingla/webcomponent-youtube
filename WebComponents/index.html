@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./app.css">
+    <script src="./HelloWorld.js"></script>
+    <script src="./CountElementLifecycleMethods.js"></script>
+    <script src="./TemplateExample.js"></script>
+    <script src="./ShadowDomExample.js"></script>
+    <script src="./SlotExample.js"></script>
+    <script src="./TodoListExample.js"></script>
+  </head>
+  <body>
+    <div>Web components</div>
+    <hello-world name="Anuj"></hello-world>
+    <!-- Count example with hooks -->
+    <countelement-lifecyclemethods steps="4" initialvalue="4"></countelement-lifecyclemethods>
+
+    <!-- Templates -->
+    <template id="templateexample">
+      <p>Hello world</p>
+      <p>Hello world second p</p>
+    </template>
+
+    <template-example></template-example>
+
+    <!-- shadow dom -->
+    <shadowdom-example></shadowdom-example>
+
+    <!-- outside button -->
+    <button>Outside button 1</button>
+    <button>Outside button 2</button>
+
+    <!-- slot example -->
+    <slot-example>
+      <h1 slot="header">Header content</h1>
+      <span>Main content</span>
+      <p slot="footer">Footer content</p>
+    </slot-example>
+
+    <!-- todo list -->
+    <todolist-example></todolist-example>
+  </body>
+</html>
